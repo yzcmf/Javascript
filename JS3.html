@@ -1,0 +1,39 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+//zyx = {name:"Yuxuan Zhou",age:24};
+//taylor={name:"Taylor Swift",age:20};
+
+function person(name,age)
+{
+ this.name=name;
+ this.age=age;
+ this.yearsUntilRetire = yearsLeft;
+}
+
+function yearsLeft()
+{
+  var numYears = 65 - this.age;
+  return numYears;
+}
+
+var zyx=new person("Yuxuan Zhou",24);
+var taylor = new person(" Taylor Swift",20);
+
+
+</script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+document.write(taylor.yearsUntilRetire());
+
+</script>
+
+</body>
+</html>
